@@ -1,0 +1,42 @@
+{
+   "person": [
+       {
+           "amount": "Clark",
+           "impact": "Kent",
+           "story": "Reporter",
+           "roll": 20
+       },
+       {
+           "amount": "Bruce",
+           "impact": "Wayne",
+           "story": "Playboy",
+           "roll": 30
+       },
+       {
+           "amount": "Peter",
+           "impact": "Parker",
+           "story": "Photographer",
+           "roll": 40
+       }
+   ]
+}
+
+{
+   "impact": [
+       {
+           "amount": "Clark",
+           "impact": "Kent",
+           "story": "Reporter"
+       },
+       {
+           "amount": "Bruce",
+           "impact": "Wayne",
+           "story": "Playboy"
+       },
+       {
+           "amount": "Peter",
+           "impact": "Parker",
+           "story": "Photographer"
+       }
+   ]
+}

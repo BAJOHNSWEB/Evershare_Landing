@@ -1,0 +1,68 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+<script>
+
+    $(function() {
+
+
+   var impact = [];
+
+   $.getJSON('impact1.json', function(data) {
+       $.each(data.impact, function(i, f) {
+          
+           
+            var tblRow = "<tr>" +
+           "<td>" + f.impact + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+           
+           var tblRow = "<tr>" + "<td>" + "&pound;" + f.amount + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+           
+          
+           
+           var tblRow = "<tr>" +  "<td>" + f.story + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+           
+           
+     });
+
+   });
+
+});
+</script>
+</head>
+
+<body>
+    
+    <style>
+    
+        table {
+           border-collapse: collapse;
+            border: none;
+            border: 1px solid white;
+            
+        }
+        
+        
+    
+    </style>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "userdata" >
+  <thead>
+           
+        
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
+
+</body>
+</html>
